@@ -20,7 +20,7 @@ require_once ("model/DB_Connection.php");
         public function borrarSesion(){
             $_SESSION = array();
             session_destroy();
-            header("Location:../index.php");
+            header("Location:index.php");
         }
     }
 ?>

@@ -1,0 +1,163 @@
+*{
+    padding:0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    background: rgb(223,225,195);
+}
+#barra{
+    background: rgb(29, 88, 58);
+    height: 50px;
+    padding-top: 20px;
+}
+#menu{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-left: 50px;
+    background: rgb(29, 88, 58);
+}
+#menu2{
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+    background: rgb(29, 88, 58);
+}
+
+#nombre{
+    text-align: right;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin-left: 700px;
+    background: rgb(29, 88, 58);
+}
+#enlace{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: rgb(29, 88, 58);
+}
+h1{
+    margin-top: 40px;
+    text-align: center;
+    font-size: 50px;
+}
+h2{
+    margin-top: 40px;
+    text-align: center;
+}
+table{
+    text-align: left;
+    border: 5px solid rgb(29, 88, 58);
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+}
+.item{
+    font-size: 30px;
+    margin-left: 600px;
+}
+#footer{
+    text-align: center;
+    font-size: 15px;
+    color: rgb(29, 88, 58);
+    margin-top: 20%;
+}
+#cerrar{
+    margin-left: 45%;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(29, 88, 58);
+    color: white;
+    border:3px double white;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+#cerrar:hover{
+     font-weight: bold;
+     background-color: white;
+     color: rgb(29, 88, 58);
+     border: 3px double rgb(29, 88, 58);
+ }
+#formulario{
+    display: inline-block;
+    text-align: center;
+    margin-left: 500px;
+}
+#comentario{
+    width: 400px;
+    height: 200px;
+    resize: none;
+}
+#coment{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(29, 88, 58);
+    color: white;
+    border:3px double white;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+#coment:hover{
+    font-weight: bold;
+    background-color: white;
+    color: rgb(29, 88, 58);
+    border: 3px double rgb(29, 88, 58);
+}
+.campo{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+#tema{
+    width: 400px;
+    height: 25px;
+}
+#descripcion{
+    width: 400px;
+    height: 50px;
+    resize: none;
+}
+.item{
+    color: rgb(29, 88, 58);
+}
+#submit{
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(29, 88, 58);
+    color: white;
+    border:3px double white;
+    margin-top: 5px;
+    border-radius: 5px;
+    padding: 3px;
+}
+#submit:hover{
+    font-weight: bold;
+    background-color: white;
+    color: rgb(29, 88, 58);
+    border: 3px double rgb(29, 88, 58);
+}
+#link{
+    color: rgb(29,88,58);
+}
+#parrafo{
+    margin: auto;
+    width: 800px;
+}
+#formIndex{
+    display: inline-block;
+    text-align: center;
+    margin-left: 600px;
+}
+#formUsuario{
+    display: inline-block;
+    text-align: center;
+    margin-left: 600px;
+}

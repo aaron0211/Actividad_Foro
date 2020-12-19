@@ -1,11 +1,12 @@
 <?php
+ob_start();
 require_once ("header.php");
 ?>
         <header>
-            <h1>Registrar Usuario</h1>
+            <h2>Registrar Usuario</h2>
         </header>
         <form action="" method="post">
-            <div id="formulario">
+            <div id="formUsuario">
                 <form action="" method="post">
                     <p class="campo">Nombre de usuario: *</p>
                     <input type="text" name="nombre"/><br/>
@@ -14,7 +15,7 @@ require_once ("header.php");
                     <p class="campo">Email: *</p>
                     <input type="email" name="email"/><br/>
                     <p>*Requerido</p>
-                    <input type="submit" name="submit" value="Registrarse">
+                    <input id="submit" type="submit" name="submit" value="Registrarse">
 
 <?php
 require_once('../controllers/Usuario.php');
@@ -28,9 +29,12 @@ if (isset($_POST['submit'])){
 }
 ?>
                 </form>
-                <p id="link"><a href="../index.php">Volver a la pantalla de inicio</a> </p>
+                <p><a id="link" href="../index.php">Volver a la pantalla de inicio</a> </p>
             </div>
         </form>
     </div>
 </body>
 </html>
+<?php
+ob_end_flush();
+?>

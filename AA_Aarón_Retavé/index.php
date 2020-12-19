@@ -1,7 +1,11 @@
+<?php
+ob_start();
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8" />
+    <link rel="StyleSheet" href="css/style.css" type="text/css">
     <title>Nuevo registro</title>
 </head>
 <body>
@@ -9,15 +13,13 @@
     <h1>Inicio de sesión</h1>
 </header>
 <div id="contenedor">
-    <div id="formulario">
+    <div id="formIndex">
         <form action="" method="post">
             <p class="campo">Nombre de usuario:</p>
             <input type="text" name="nombre"/><br/><br/>
             <p class="campo">Contraseña:</p>
             <input type="password" name="password"/>
-            <p><input type="submit" name="submit" value="Iniciar sesión"/></p>
-
-            <?php
+            <p><input id="submit" type="submit" name="submit" value="Iniciar sesión"/></p><?php
             require_once ("sesion.php");
             require_once("controllers/Usuario.php");
             if (isset($_POST['submit'])) {
@@ -32,10 +34,12 @@
                 }
 
             }
-            ?>
-        </form>
-        <p id="link"><a href="views/nuevoUsuario.php">Regístrate aquí</a></p>
+            ?></form>
+        <p><a id="link" href="views/nuevoUsuario.php">Regístrate aquí</a></p>
     </div>
 </div>
 </body>
 </html>
+<?php
+ob_end_flush();
+?>

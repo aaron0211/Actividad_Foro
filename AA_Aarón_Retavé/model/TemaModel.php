@@ -49,7 +49,7 @@ class TemaModel{
         $this->tema_id = $id;
         try {
             $this->conexion->conectar();
-            $this->conexion->ejecutar("delete from tema where tema_id='$this->tema_id'");
+            $this->conexion->ejecutar("delete from temas where tema_id=$this->tema_id");
             $this->conexion->desconectar();
         } catch (PDOException $exception) {
             throw $exception;
