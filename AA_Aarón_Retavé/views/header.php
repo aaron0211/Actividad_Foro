@@ -22,5 +22,11 @@ foreach ($resultado as $user){
     <div id="barra">
         <a id="menu" href="inicio.php">Inicio</a>
         <a id="menu2" href="temas.php">Temas</a>
-        <a id='nombre'>Hola <?php echo $nombre?>. No eres tú? Cierra sesión desde la página de <a id="enlace" href='inicio.php'> inicio.</a></a>
+        <?php
+            if (isset($_SESSION['usuario_id'])){
+                echo '<a id="nombre">Hola '.$nombre.' No eres tú? Cierra sesión desde la página de <a id="enlace" href="inicio.php"> inicio.</a></a>';
+            }else{
+                echo '<a id="nombre">Si quieres escribir debes iniciar sesión';
+            }
+        ?>
     </div>

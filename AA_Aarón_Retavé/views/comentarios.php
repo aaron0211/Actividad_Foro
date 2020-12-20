@@ -38,7 +38,9 @@ try {
 }
 echo '<br>';
 echo '<br>';
-echo "<a class='item' href='nuevoComentario.php?tema=".$_GET['tema']."'>Nuevo comentario</a>";
+if (isset($_SESSION['usuario_id'])) {
+    echo "<a class='item' href='nuevoComentario.php?tema=" . $_GET['tema'] . "'>Nuevo comentario</a>";
+}
 require_once ("footer.php");
 ob_end_flush();
 ?>

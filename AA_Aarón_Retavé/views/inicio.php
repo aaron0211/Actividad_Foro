@@ -1,7 +1,6 @@
 <?php
 require_once ("header.php");
 require_once("../sesion.php");
-//$sesion = new Sesion();
 if (isset($_SESSION['nombre'])) {
     echo "<h2 id='bienvenida'>Bienvenid@ \n";
     echo "<i>".$sesion->get('nombre')."</i>";

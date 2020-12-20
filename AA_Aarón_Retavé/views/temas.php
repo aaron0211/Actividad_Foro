@@ -28,6 +28,8 @@ try {
 }
 echo '<br>';
 echo '<br>';
-echo '<a class="item" href="nuevoTema.php">Nuevo tema</a>';
+if (isset($_SESSION['usuario_id'])) {
+    echo '<a class="item" href="nuevoTema.php">Nuevo tema</a>';
+}
 require_once ("footer.php");
 ?>
