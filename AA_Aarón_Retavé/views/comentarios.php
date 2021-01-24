@@ -26,7 +26,7 @@ try {
             echo '<td>' . $comentario['fecha'] . '</td>';
             if (isset($_SESSION['usuario_id'])) {
                 if ($_SESSION['usuario_id'] == $comentario['usuario_id'] || $_SESSION['tipo'] == 1 || $_SESSION['tipo'] == 2) {
-                    echo '<td><a href="eliminaComentario.php?id='.$id.'&tema='.$tema.'">Eliminar</a></td>';
+                    echo '<td><a href="eliminaComentario.php?id='.$id.'&tema='.$tema.'" onclick="return confirm();">Eliminar</a></td>';
                 }
             }
             echo "</tr>";

@@ -30,6 +30,20 @@ class TemaModel{
         return $resultado;
     }
 
+    public function totalTemas(){
+        $this->conexion->conectar();
+        $total = $this->conexion->consultar('select count(tema_id) from temas');
+        $this->conexion->desconectar();
+        return $total;
+    }
+
+    public function getTemasPagina($inicio,$por_pagina){
+        $this->conexion->conectar();
+        $resultado = $this->conexion->consultar('select t.tema, t.descripcion, u.nombre, t.tema_id, u.usuario_id from temas t, usuarios u where t.usuario_id=u.usuario_id limit '.$inicio.','.$por_pagina);
+        $this->conexion->desconectar();
+        return $resultado;
+    }
+
     public function nuevoTema($tema,$descripcion){
         $this->tema=$tema;
         $this->descripcion=$descripcion;
